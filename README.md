@@ -11,7 +11,7 @@ https://www.youtube.com/watch?v=JdQeNxWCguQ
 By default the libraries and headers will be installed in /usr/local/lib/ and /usr/local/include directories.
 
 
-Esta fue la libreria que se instalo localmente: https://fragglet.github.io/c-algorithms/ --> https://github.com/fragglet/c-algorithms
+Esta fue la libreria que se instalo localmente: https://fragglet.github.io/c-algorithms/ --- https://github.com/fragglet/c-algorithms
 
 Este es el ejemplo base: https://github.com/fragglet/c-algorithms/blob/master/test/test-slist.c
 
