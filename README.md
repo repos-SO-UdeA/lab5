@@ -39,9 +39,9 @@ libcalg.so                libopenflow_action_install.la
 libcalg.so.0              libopenflow_action_install.so
 libcalg.so.0.0.0     
 
- > lcalg
+ lcalg
 
 /usr/local/include/libcalg-1.0/libcalg
 
---->
+-->
 
