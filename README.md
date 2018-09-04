@@ -6,7 +6,8 @@ https://www.tutorialspoint.com/data_structures_algorithms/linked_lists_algorithm
 https://www.explainxkcd.com/wiki/index.php/379:_Forgetting
 https://www.youtube.com/watch?v=JdQeNxWCguQ
 
-<!--
+<!---
+
 By default the libraries and headers will be installed in /usr/local/lib/ and /usr/local/include directories.
 
 
@@ -38,9 +39,9 @@ libcalg.so                libopenflow_action_install.la
 libcalg.so.0              libopenflow_action_install.so
 libcalg.so.0.0.0     
 
- ---> lcalg
+ > lcalg
 
 /usr/local/include/libcalg-1.0/libcalg
 
+--->
 
--->
