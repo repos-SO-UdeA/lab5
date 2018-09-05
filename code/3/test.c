@@ -1,12 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
-
-//#include "alloc-testing.h"
-//#include "framework.h"
-
 #include "slist.h"
 #include "compare-int.h"
+
+/*
+Compilacion:
+
+gcc -I/usr/local/include/libcalg-1.0/libcalg  test.c -o test.out -lcalg
+
+Ejecucion:
+
+./test.out
+
+*/
+
 
 int variable1 = 4, variable2 = 10, variable3 = 25, variable4 = 40;
 
@@ -92,6 +100,31 @@ int main() {
   entry = slist_next(entry);
   printf("Valor del nodo de la posicion 3 : %d\n", *((int *)slist_data(entry)));
 
+  /* Esperimentando con la funcion para ordenar la lista */
+
+  // Antes de ordenar la lista
+
+  /* Imprimiendo la lista de 4 elementos antes de ordenarla */
+  rover = list;
+  while(rover != NULL) {
+    printf("%d ",*((int *)slist_data(rover)));
+    rover = slist_next(rover);
+  }
+  printf("\n");
+
+  // Despues de ordenar la listas
+  slist_sort(&list, int_compare); // Ordenando la lista
+
+  /* Imprimiendo la lista de 4 elementos despues de ordenarla */
+  rover = list;
+  while(rover != NULL) {
+    printf("%d ",*((int *)slist_data(rover)));
+    rover = slist_next(rover);
+  }
+  printf("\n");
+
+  /* Finalizando el programa */
+
   /* Free a list */
 	slist_free(list);
 
@@ -100,7 +133,6 @@ int main() {
   return 0;
 
 }
-
 
 SListEntry *generate_list(void)
 {
