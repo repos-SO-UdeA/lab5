@@ -62,7 +62,7 @@ int main() {
   printf("Valor del nodo de la posicion 1: %d\n", p_n->dato);
   // Imprimiendo el valor del nodo de la posicion 2
   printf("Valor del nodo de la posicion 2: %d\n", p_n->siguiente->dato);
-  // Imprimiendo el valor del nodo de la posicion 2
+  // Imprimiendo el valor del nodo de la posicion 3
   printf("Valor del nodo de la posicion 3: %d\n", p_n->siguiente->siguiente->dato);
 
 
