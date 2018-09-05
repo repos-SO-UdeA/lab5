@@ -47,7 +47,7 @@ int main() {
 
   // Imprimiendo el valor del nodo de la posicion 6
   if (n_pos6 != NULL) {
-    printf("Valor del nodo de la posicion 3: %d\n", n_pos2->dato);
+    printf("Valor del nodo de la posicion 6: %d\n", n_pos2->dato);
   }
   else {
     printf("Nodo no encontrado\n");
@@ -61,9 +61,9 @@ int main() {
   // Imprimiendo el valor del nodo de la posicion 1
   printf("Valor del nodo de la posicion 1: %d\n", p_n->dato);
   // Imprimiendo el valor del nodo de la posicion 2
-  printf("Valor del nodo de la posicion 1: %d\n", p_n->siguiente->dato);
+  printf("Valor del nodo de la posicion 2: %d\n", p_n->siguiente->dato);
   // Imprimiendo el valor del nodo de la posicion 2
-  printf("Valor del nodo de la posicion 1: %d\n", p_n->siguiente->siguiente->dato);
+  printf("Valor del nodo de la posicion 3: %d\n", p_n->siguiente->siguiente->dato);
 
 
   /* Finalizando el programa */
