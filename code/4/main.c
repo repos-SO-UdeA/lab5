@@ -7,6 +7,7 @@
 
 
 SListEntry *grupo = NULL;
+estudiante e_i_data;
 
 int main() {
   printf("Ensayo\n");

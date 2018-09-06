@@ -20,7 +20,7 @@ typedef struct estudiante {
 } estudiante;
 
 extern SListEntry *grupo; // estudiante grupo[MAX_EST];
-
+extern estudiante e_i_data;
 #define TRUE 1
 #define FALSE 0
 
@@ -39,8 +39,10 @@ void waitForEnter(void);
 /* Funciones que implementan la logica de la aplicacion */
 
 estudiante llenarDatos(char *nom, char *id, float nota);
-int agregarEstudiante(estudiante e);
+// int agregarEstudiante(estudiante e); ---- No nos dio
 void imprimirLista(void);
+int removerEstudiante(char *id);
+estudiante *obtenerEstudiante(char *id);
 
 
 /*
