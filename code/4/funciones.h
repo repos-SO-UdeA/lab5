@@ -43,18 +43,7 @@ estudiante llenarDatos(char *nom, char *id, float nota);
 void imprimirLista(void);
 int removerEstudiante(char *id);
 estudiante *obtenerEstudiante(char *id);
-
-
-/*
-estudiante llenarDatos(char *nom, char *id, float nota);
-int estudianteDisponible(char *id);
-estudiante *obtenerEstudiante(char *id);
-void imprimirDatos(estudiante e);
 float calcularPromedio(void);
-int agregarEstudiante(estudiante e);
-int removerEstudiante(char *id);
-void imprimirLista(void);
 void modificarNota(char *id, float nota);
-*/
-
+void imprimirDatos(estudiante e);
 #endif

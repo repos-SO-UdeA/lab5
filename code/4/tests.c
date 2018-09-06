@@ -29,8 +29,10 @@ void test1(void) {
   removerEstudiante("0001");
   printf("\n");
   imprimirLista();
+  printf("Promedio: %.1f\n",calcularPromedio());
+  modificarNota("0003",4.8);
   //agregarEstudiante(e4);
   //imprimirDatos(e1)
-  //printf("\n");
-  //imprimirLista();
+  printf("\n");
+  imprimirLista();
 }
