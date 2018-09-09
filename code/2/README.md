@@ -97,7 +97,7 @@ install: $(TARGET)
 make -f makefile1
 ```
 
-**Caso 2**: Cado mejorado haciendo uso de variables. (Archivo: [makefile2](makefile2))
+**Caso 2**: [makefile2](makefile2)
 
 ```
 # gcc for C
@@ -106,22 +106,42 @@ CC = gcc
 
 #compiler flags
 # -Wall
-CFLAGS = -Wall -I.
+CFLAGS = -Wall 
+
+# Search for dependencies and targets from "src" and "include" directories
+# The directories are separated by space
+INCLUDES = -I$(shell pwd)/headers
+
+# Directories
+BASEDIR = $(shell pwd)
+SCR_DIR = $(BASEDIR)/sources
+HEADERS_DIR = $(BASEDIR)/headers
+BIN_DIR = $(BASEDIR)/bin
+
+# VPATH variable
+VPATH = sources:headers
+
+
+# VPATH variable
+SOURCES = $(shell ls $(SCR_DIR))
+OBJECTS = $(SOURCES:%.c=%.o)
 
 #target
-TARGET := example_listas.out
-#directory for the object files
-HEADERS = listas.h
-SOURCES = main.c listas.c
-OBJECTS = main.o listas.o
+TARGET = example_multi1.out
 
-default: $(TARGET)
+# Rules
+default: all
 
-%.o: %.c $(HEADERS)
-	$(CC) -c $< -o $@
+all:$(TARGET)
 
 $(TARGET): $(OBJECTS)
-	$(CC) $(OBJECTS) $(CFLAGS) -o $@
+	$(CC) $(OBJECTS) -o $@
+
+%.o: %.c funciones.h
+	$(CC) $(CFLAGS) $(INCLUDES) $< -c
+
+install: $(TARGET)
+  mv $(TARGET) $(BIN_DIR)
 
 clean:
 	-rm -f *.o
@@ -132,43 +152,4 @@ clean:
 
 ```
 make -f makefile2
-```
-
-**Caso 3**: Cado mejorado haciendo uso de variables y comodines. La ventaja es que este makefile puede usarse en otros codigos similares en estructura independiente del nombre de los archivos (Archivo: [makefile3](makefile3))
-
-
-```
-# gcc for C
-# g++ for c++
-CC = gcc
-
-#compiler flags
-# -Wall
-CFLAGS = -Wall -I.
-
-#target
-TARGET := example_listas.out
-#directory for the object files
-HEADERS = $(wildcard *.h)
-SOURCES = $(wildcard *.c)
-OBJECTS = $(SOURCES:%.c=%.o)
-
-default: all
-all: $(TARGET)
-
-%.o: %.c $(HEADERS)
-	$(CC) -c $< -o $@
-
-$(TARGET): $(OBJECTS)
-	$(CC) $(OBJECTS) $(CFLAGS) -o $@
-
-clean:
-	-rm -f *.o
-	-rm -f $(TARGET)
-```
-
-**Uso basico**:
-
-```
-make -f makefile3
 ```
