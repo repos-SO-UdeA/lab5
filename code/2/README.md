@@ -47,30 +47,48 @@ cd bin
 
 ### Empleando makefiles 
 
-**makefile1**: Caso mas sencillo en el que no se emplean comodines ni variables. (Archivo: [makefile1](makefile1))
+**makefile1**: [makefile1](makefile1)
 
 ```
-# Regla de construccion general
-all: example_listas.out
+# gcc for C
+# g++ for c++
+CC = gcc
 
-# Regla que genera el archivo ejecutable
-example_multi1.out: main.o listas.o
-	gcc main.o listas.o -o example_multi1.out
+#compiler flags
+# -Wall
+CFLAGS = -Wall 
 
-# Reglas para generar los archivos objeto del programa
-listas.o: listas.c listas.h
-	gcc -I. -c funciones.c
+# Search for dependencies and targets from "src" and "include" directories
+# The directories are separated by space
+
+INCLUDES = -I$(shell pwd)/headers
+
+VPATH = sources:headers
+TARGET = example_listas.out
+OBJECTS = main.o listas.o 
+BIN = $(shell pwd)/bin
+
+#target
+default: all
+
+all:$(TARGET)
+
+$(TARGET): $(OBJECTS)
+	echo $(OBJECTS)
+	$(CC) $(OBJECTS) -o $@
 
 main.o: main.c funciones.h
-	gcc -I. -c main.c
+	$(CC) $(CFLAGS) $(INCLUDES) $< -c
 
-#Regla para borrar todos los archivos obtejo (.o) y copias de seguridad (~) del proyecto
+funciones.o: funciones.c funciones.h
+	$(CC) $(CFLAGS) $(INCLUDES) $< -c
+
 clean:
-	rm *.o *~
+	-rm -f *.o
+	-rm -f $(TARGET)
 
-#Regla para borrar todos los archivos obtejo (.o), copias de seguridad (~) y el ejecutable generado
-clean_all:
-	rm *.o *~ *.out
+install: $(TARGET)
+	mv $(TARGET) $(BIN)
 ```
 
 **Uso basico**:
