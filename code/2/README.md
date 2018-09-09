@@ -1,9 +1,9 @@
-# Ejemplo 1 - Listas enlazadas
+# Ejemplo 2 - Listas enlazadas
 
 Para este caso los archivos fuente (.c) y cabecera (.h) se encuentran los directorios **[ sources ]** y **[ headers ]** respectivamente. La gerarquia de directorios será la siguiente:
 
 ```
-[ 1 ] --|--> [ sources ] --|-- listas.c        
+[ 2 ] --|--> [ sources ] --|-- listas.c        
         |                  |-- main.c
         | 
         |--> [headers] --|-- listas.h
@@ -11,7 +11,7 @@ Para este caso los archivos fuente (.c) y cabecera (.h) se encuentran los direct
         |--> [bin]
 ```
 
-En el directorio **[ bin ]** ira el ejecutable. Para el caso se asume que los comandos gcc se ejecutan en el directorio raiz del ejemplo, directorio **[1]** en el caso.
+En el directorio **[ bin ]** ira el ejecutable. Para el caso se asume que los comandos gcc se ejecutan en el directorio raiz del ejemplo, directorio **[2]** en el caso.
 
 ## Comandos de compilacion y enlazado
 
