@@ -31,9 +31,9 @@ gcc -I. -Wall *.c -o admin_clase.out
 ./example_listas.out
 ```
 
-### Empleando makefiles
+### Empleando makefiles 
 
-**makefile1**: Caso mas sencillo (No se emplean comodines ni variables).
+**makefile1**: Caso mas sencillo en el que no se emplean comodines ni variables. (Archivo: [makefile1](makefile1))
 
 ```
 # Regla de construccion general
@@ -64,4 +64,6 @@ clean_all:
 ```
 make -f makefile1
 ```
+
+**Caso 2**: Cado mejorado haciendo uso de variables. (Archivo: [makefile2](makefile2))
 
