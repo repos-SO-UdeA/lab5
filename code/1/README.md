@@ -59,3 +59,9 @@ clean_all:
 	rm *.o *~ *.out
 ```
 
+**Uso**:
+
+```
+make -f makefile1
+```
+
