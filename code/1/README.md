@@ -59,7 +59,7 @@ clean_all:
 	rm *.o *~ *.out
 ```
 
-**Uso**:
+**Uso basico**:
 
 ```
 make -f makefile1
@@ -96,4 +96,47 @@ clean:
 	-rm -f $(TARGET)
 ```
 
-**Caso 3**: Cado mejorado haciendo uso de variables y comodines. (Archivo: [makefile3](makefile3))
+**Uso basico**:
+
+```
+make -f makefile2
+```
+
+**Caso 3**: Cado mejorado haciendo uso de variables y comodines. La ventaja es que este makefile puede usarse en otros codigos similares en estructura independiente del nombre de los archivos (Archivo: [makefile3](makefile3))
+
+
+```
+# gcc for C
+# g++ for c++
+CC = gcc
+
+#compiler flags
+# -Wall
+CFLAGS = -Wall -I.
+
+#target
+TARGET := example_listas.out
+#directory for the object files
+HEADERS = $(wildcard *.h)
+SOURCES = $(wildcard *.c)
+OBJECTS = $(SOURCES:%.c=%.o)
+
+default: all
+all: $(TARGET)
+
+%.o: %.c $(HEADERS)
+	$(CC) -c $< -o $@
+
+$(TARGET): $(OBJECTS)
+	$(CC) $(OBJECTS) $(CFLAGS) -o $@
+
+clean:
+	-rm -f *.o
+	-rm -f $(TARGET)
+```
+
+**Uso basico**:
+
+```
+make -f makefile3
+```
