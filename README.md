@@ -57,7 +57,7 @@ if (new_item_ptr == NULL) {
 
 ```
 
-3. **Arreglo dinamico**: Codifique, compile y ejecute el siguiente programa (tomado del libro C primer plus):
+3. **Arreglo dinamico**: Codifique, compile y ejecute el programa [ejemplo3.c](./ejemplo3.c)(tomado del libro C primer plus):
 
 ```C
 /* dyn_arr.c -- dynamically allocated array */
@@ -97,7 +97,7 @@ int main(void) {
 }
 ```
 
-4. **Estructuras y reserva dinamica de memoria**: Codifique, compile y ejecute el siguiente programa (tomado del libro C primer plus):
+4. **Estructuras y reserva dinamica de memoria**: Codifique, compile y ejecute el programa [ejemplo4.c](./ejemplo4.c) (tomado del libro C primer plus):
 
 ```C
 // names3.c -- use pointers and malloc()
@@ -173,7 +173,7 @@ char * s_gets(char * st, int n) {
 }
 ```
 
-5. **Estructura con miembro tipo array flexibles**: Codifique, compile y ejecute el siguiente programa (tomado del libro C primer plus):
+5. **Estructura con miembro tipo array flexibles**: Codifique, compile y ejecute el programa [ejemplo5.c](./ejemplo5.c)(tomado del libro C primer plus):
 
 ```C
 // flexmemb.c -- flexible array member (C99 feature)
