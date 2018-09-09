@@ -1,0 +1,39 @@
+# gcc for C
+# g++ for c++
+CC = gcc
+
+#compiler flags
+# -Wall
+CFLAGS = -Wall 
+
+# Search for dependencies and targets from "src" and "include" directories
+# The directories are separated by space
+
+INCLUDES = -I$(shell pwd)/headers
+
+VPATH = sources:headers
+TARGET = example_listas.out
+OBJECTS = main.o listas.o 
+BIN = $(shell pwd)/bin
+
+#target
+default: all
+
+all:$(TARGET)
+
+$(TARGET): $(OBJECTS)
+	echo $(OBJECTS)
+	$(CC) $(OBJECTS) -o $@
+
+main.o: main.c funciones.h
+	$(CC) $(CFLAGS) $(INCLUDES) $< -c
+
+funciones.o: funciones.c funciones.h
+	$(CC) $(CFLAGS) $(INCLUDES) $< -c
+
+clean:
+	-rm -f *.o
+	-rm -f $(TARGET)
+
+install: $(TARGET)
+	mv $(TARGET) $(BIN)
