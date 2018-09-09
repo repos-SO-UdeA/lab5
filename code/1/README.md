@@ -67,3 +67,33 @@ make -f makefile1
 
 **Caso 2**: Cado mejorado haciendo uso de variables. (Archivo: [makefile2](makefile2))
 
+```
+# gcc for C
+# g++ for c++
+CC = gcc
+
+#compiler flags
+# -Wall
+CFLAGS = -Wall -I.
+
+#target
+TARGET := example_listas.out
+#directory for the object files
+HEADERS = listas.h
+SOURCES = main.c listas.c
+OBJECTS = main.o listas.o
+
+default: $(TARGET)
+
+%.o: %.c $(HEADERS)
+	$(CC) -c $< -o $@
+
+$(TARGET): $(OBJECTS)
+	$(CC) $(OBJECTS) $(CFLAGS) -o $@
+
+clean:
+	-rm -f *.o
+	-rm -f $(TARGET)
+```
+
+**Caso 3**: Cado mejorado haciendo uso de variables y comodines. (Archivo: [makefile3](makefile3))
