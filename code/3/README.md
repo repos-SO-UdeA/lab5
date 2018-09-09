@@ -195,3 +195,23 @@ Para este caso, como se va a hacer uso de una libreria ajena se emplean dos para
 * **ruta_archivos_cabecera**: /usr/local/include/libcalg-1.0/libcalg, así el parametro para el gcc sera: **-I/usr/local/include/libcalg-1.0/libcalg**
 * **nombre_libreria**: Para el caso la libreria se llama **libcalg.so** de modo que el parametro a pasar al gcc sera **-lcalg**
 
+
+#### Compilando y enlazando por pasos ####
+
+```
+gcc -Wall -I/usr/local/include/libcalg-1.0/libcalg test.c -c 
+gcc test.o -o test.out -lcalg
+```
+
+
+#### Compilando y enlazando por pasos ####
+
+```
+gcc -I/usr/local/include/libcalg-1.0/libcalg -Wall test.c -o test.out -lcalg
+```
+
+### Ejecutando ###
+
+```
+./test.out
+```
