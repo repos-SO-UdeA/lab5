@@ -232,7 +232,7 @@ void showFlex(const struct flex * p) {
 1. Vaya al ejemplo de listas enlazadas del siguiente [enlace](./code/1/)
 2. Vaya al ejemplo de listas enlazadas del siguiente [enlace](./code/2/)
 3. En el siguiente [enlace](./code/3/) se emplea la libreria [C Algorithms](https://fragglet.github.io/c-algorithms/) para implementar un programa que hace exactamente lo mismo que en el ejemplo 1. Vaya al enlace y analice como funciona.
-4. El siguiente [enlace](/code/4) es un intento por reproducir el ejemplo de aplicacion con estudiantes analizado en el [enlace](../lab4/tree/master/code/2). Analice el codigo. (**Nota**: este codigo aun tien bugs que no han sido corregidos).
+4. El siguiente [enlace](/code/4) es un intento por reproducir el ejemplo de aplicacion con estudiantes analizado en el [enlace](https://github.com/repos-SO-UdeA/lab4/tree/master/code/2). Analice el codigo. (**Nota**: este codigo aun tien bugs que no han sido corregidos).
 
 
 ## Referencias
@@ -241,8 +241,8 @@ void showFlex(const struct flex * p) {
 * https://www.explainxkcd.com/wiki/index.php/379:_Forgetting
 * https://fragglet.github.io/c-algorithms/
 
-<!---
 
+<!---
 # lab5
 Laboratorio 5
 
@@ -251,8 +251,9 @@ https://www.tutorialspoint.com/data_structures_algorithms/linked_lists_algorithm
 https://www.explainxkcd.com/wiki/index.php/379:_Forgetting
 https://www.youtube.com/watch?v=JdQeNxWCguQ
 https://fragglet.github.io/c-algorithms/
+-->
 
-
+<!---
 
 By default the libraries and headers will be installed in /usr/local/lib/ and /usr/local/include directories.
 
