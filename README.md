@@ -232,7 +232,7 @@ void showFlex(const struct flex * p) {
 1. Vaya al ejemplo de listas enlazadas del siguiente [enlace](./code/1/)
 2. Vaya al ejemplo de listas enlazadas del siguiente [enlace](./code/2/)
 3. En el siguiente [enlace](./code/3/) se emplea la libreria [C Algorithms](https://fragglet.github.io/c-algorithms/) para implementar un programa que hace exactamente lo mismo que en el ejemplo 1. Vaya al enlace y analice como funciona.
-4. El siguiente [enlace](/code/4) es un intento por reproducir el ejemplo de aplicacion con estudiantes analizado en el enlace [../lab4/tree/master/code/2]
+4. El siguiente [enlace](/code/4) es un intento por reproducir el ejemplo de aplicacion con estudiantes analizado en el [enlace](../lab4/tree/master/code/2). Analice el codigo. (**Nota**: este codigo aun tien bugs que no han sido corregidos).
 
 
 ## Referencias
