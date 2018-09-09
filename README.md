@@ -14,7 +14,7 @@ Leer, simular y comprender los ejemplos del enlace [Memoria dinamica en C](https
 
 Leer, simular y comprender los ejemplos del enlace [listas enlazadas](https://github.com/tigarto/2018-1/blob/master/listas_enlazadas.ipynb). Las listas enlazadas, son una de las aplicaciones del manejo dinámico de memoria tipicas.
 
-### Ejemplos de repaso
+### Ejemplos de repaso de los conceptos basicos
 
 1. ¿Que se hacen siguientes lineas ne codigo?
 
@@ -227,11 +227,18 @@ void showFlex(const struct flex * p) {
 }
 ```
 
-## Referencias
-https://www.tutorialspoint.com/data_structures_algorithms/linked_lists_algorithm.htm
-https://www.tutorialspoint.com/data_structures_algorithms/linked_lists_algorithm.htm
-https://www.explainxkcd.com/wiki/index.php/379:_Forgetting
+### Ejemplos de repaso de las aplicaciones 
 
+1. Vaya al ejemplo de listas enlazadas del siguiente [enlace](./code/1/)
+
+
+## Referencias
+* https://www.tutorialspoint.com/data_structures_algorithms/linked_lists_algorithm.htm
+* https://www.tutorialspoint.com/data_structures_algorithms/linked_lists_algorithm.htm
+* https://www.explainxkcd.com/wiki/index.php/379:_Forgetting
+* https://fragglet.github.io/c-algorithms/
+
+<!---
 
 # lab5
 Laboratorio 5
@@ -242,7 +249,7 @@ https://www.explainxkcd.com/wiki/index.php/379:_Forgetting
 https://www.youtube.com/watch?v=JdQeNxWCguQ
 https://fragglet.github.io/c-algorithms/
 
-<!---
+
 
 By default the libraries and headers will be installed in /usr/local/lib/ and /usr/local/include directories.
 
