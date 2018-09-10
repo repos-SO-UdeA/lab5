@@ -3,6 +3,7 @@
 > **Objetivos**:
 > * Comprender el concepto de memoria dinamica en C.
 > * Analizar algunas aplicaciones que usan memoria dinamica.
+> * Automatizar la compilación de manera basica empleando la herramienta GNU Make.
 
 ## Manejo dinamico de memoria en C
 
@@ -14,7 +15,17 @@ Leer, simular y comprender los ejemplos del enlace [Memoria dinamica en C](https
 
 Leer, simular y comprender los ejemplos del enlace [listas enlazadas](https://github.com/tigarto/2018-1/blob/master/listas_enlazadas.ipynb). Las listas enlazadas, son una de las aplicaciones del manejo dinámico de memoria tipicas.
 
-### Ejemplos de repaso de los conceptos basicos
+### Aprendiendo a usar los Makefiles
+
+
+#### Reference cards
+1. http://eduardolezcano.com/wp-content/uploads/2016/06/make_cheatsheet.pdf
+2 https://www.cheatography.com/bavo-van-achte/cheat-sheets/gnumake/pdf/
+3. https://www.gnu.org/software/make/manual/html_node/Quick-Reference.html
+4. https://www.tofgarion.net/lectures/IN323/refcards/refcardMakeIN323.pdf
+5. https://www.safaribooksonline.com/library/view/managing-projects-with/0596006101/ch02.html
+
+### Ejemplos de repaso sobre el manejo de memoria
 
 1. ¿Que se hacen siguientes lineas ne codigo?
 
