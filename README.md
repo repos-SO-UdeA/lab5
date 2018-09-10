@@ -20,9 +20,9 @@ Leer, simular y comprender los ejemplos del enlace [listas enlazadas](https://gi
 
 #### Reference cards
 1. http://eduardolezcano.com/wp-content/uploads/2016/06/make_cheatsheet.pdf
-2 https://www.cheatography.com/bavo-van-achte/cheat-sheets/gnumake/pdf/
-3. https://www.gnu.org/software/make/manual/html_node/Quick-Reference.html
-4. https://www.tofgarion.net/lectures/IN323/refcards/refcardMakeIN323.pdf
+2. https://www.cheatography.com/bavo-van-achte/cheat-sheets/gnumake/pdf/
+3. https://www.tofgarion.net/lectures/IN323/refcards/refcardMakeIN323.pdf
+4. https://www.gnu.org/software/make/manual/html_node/Quick-Reference.html
 5. https://www.safaribooksonline.com/library/view/managing-projects-with/0596006101/ch02.html
 
 ### Ejemplos de repaso sobre el manejo de memoria
