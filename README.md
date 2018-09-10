@@ -240,7 +240,16 @@ void showFlex(const struct flex * p) {
 * https://www.tutorialspoint.com/data_structures_algorithms/linked_lists_algorithm.htm
 * https://www.explainxkcd.com/wiki/index.php/379:_Forgetting
 * https://fragglet.github.io/c-algorithms/
-
+* http://www.calcifer.org/documentos/make/ejemplo.html
+* https://iie.fing.edu.uy/~vagonbar/gcc-make/make.htm
+* https://www.tutorialspoint.com/makefile/
+* http://servicio.uca.es/softwarelibre/publicaciones/make.pdf
+* http://www.cs.colby.edu/maxwell/courses/tutorials/maketutor/
+* https://hernandis.me/2017/03/20/como-hacer-un-makefile.html
+* https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html
+* http://nuclear.mutantstargoat.com/articles/make/mktut.pdf
+* https://www.isical.ac.in/~pdslab/2017/lectures/makefiles.pdf
+* http://retis.sssup.it/~luca/makefiles.pdf
 
 <!---
 
